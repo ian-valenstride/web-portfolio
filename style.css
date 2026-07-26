@@ -562,10 +562,44 @@ button {
   background-color: var(--color-white);
 }
 
-.experience-card,
-.education-card {
+.experience-timeline,
+.education-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
   max-width: 720px;
   margin: 0 auto;
+}
+
+.experience-card,
+.education-card {
+  position: relative;
+}
+
+/* Timeline connector line */
+.experience-timeline::before,
+.education-timeline::before {
+  content: "";
+  position: absolute;
+  left: 24px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: var(--color-gray-200);
+}
+
+.experience-card::before,
+.education-card::before {
+  content: "";
+  position: absolute;
+  left: calc(24px - 5px);
+  top: var(--space-6);
+  width: 12px;
+  height: 12px;
+  background-color: var(--color-blue-500);
+  border: 2px solid var(--color-white);
+  border-radius: var(--radius-full);
+  z-index: 1;
 }
 
 .experience-header,
@@ -762,6 +796,7 @@ button {
   /* Contact: 2 columns */
   .contact-grid {
     grid-template-columns: repeat(2, 1fr);
+    max-width: 640px;
   }
 
   /* About: 3 columns */
