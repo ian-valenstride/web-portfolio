@@ -254,7 +254,7 @@
               >
             </div>
             <div class="project-body">
-              <h3 class="project-title">Website Development</h3>
+              <h3 class="project-title" data-project="website" role="button" tabindex="0">Website Development</h3>
               <p class="project-description">
                 Built simple websites as part of personal learning. Practiced
                 structuring web pages with semantic HTML, styling with CSS, and
@@ -288,7 +288,7 @@
               >
             </div>
             <div class="project-body">
-              <h3 class="project-title">Discord Bot</h3>
+              <h3 class="project-title" data-project="discord" role="button" tabindex="0">Discord Bot</h3>
               <p class="project-description">
                 Created basic Discord bots using Python while learning automation.
                 Explored the Discord API, built simple command handlers, and
@@ -483,6 +483,35 @@
     </section>
 
   </main>
+
+  <!-- ==================== PROJECT DETAIL MODAL ==================== -->
+  <div class="modal-overlay" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal-backdrop" tabindex="-1"></div>
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modal-title"></h3>
+        <button class="modal-close" aria-label="Close popup" type="button">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"/>
+            <line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <p class="modal-description"></p>
+
+        <div class="modal-docs">
+          <div class="modal-doc">
+            <img class="modal-doc-image" src="" alt="" width="600" height="400" loading="lazy">
+          </div>
+          <div class="modal-doc">
+            <img class="modal-doc-image" src="" alt="" width="600" height="400" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- ==================== FOOTER ==================== -->
   <footer class="site-footer" role="contentinfo">
