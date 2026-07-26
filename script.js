@@ -95,12 +95,12 @@
       description: "Created basic Discord bots using Python to explore automation and the Discord API. This project involved setting up a bot application through the Discord Developer Portal, writing event-driven command handlers in Python, and implementing features such as auto-moderation, welcome messages, and custom slash commands. I learned about asynchronous programming with discord.py, managing API rate limits, and deploying the bot on a VPS for 24/7 uptime.",
       docs: [
         {
-          src: "assets/images/doc-discord-1.svg",
+          src: "assets/images/doc-discord-1.jpeg",
           alt: "Discord bot chat interface showing command handling"
         },
         {
-          src: "assets/images/doc-discord-2.svg",
-          alt: "Python code structure and event-driven architecture diagram"
+          src: "assets/images/doc-discord-2.jpeg",
+          alt: "Discord bot chat interface showing command handling"
         }
       ]
       }
